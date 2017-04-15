@@ -1,0 +1,170 @@
+html,body,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd{
+			margin: 0;
+			padding: 0;
+}
+li{
+	list-style: none;
+}
+*{
+	box-sizing: border-box;
+}
+
+body{
+  font:14px/1.8 Arial;
+  background: #ccc;
+  color: #333;
+}
+#page{
+	max-width: 1000px;
+    margin:0 auto;
+	padding: 30px 45px;
+	height:1000px;
+	background-color: #fff; 
+    position:relative;
+}
+
+.name {
+  width:40%;
+  float:left;
+}
+.circle{
+  position:relative;
+  width:150px;
+  height:150px;
+  background:#000;
+  border-radius:50%; 
+  font-size:30px;
+  color:#fff;
+  float:left;
+}
+.circle span:nth-child(1){
+  position:absolute;
+  left:30px;
+  top:30px;
+}
+.circle span:nth-child(2){
+  position:absolute;
+  right:30px;
+  bottom:30px;
+  
+}
+.personal .circle:before{
+  content:'';
+  display:inline-block;
+  width:100px;
+  border-top:2px solid #fff;
+  position:absolute;
+  top:75px;
+  left:24px;
+  transform: rotateZ(129deg);
+}
+.personal .name h1{
+  font-size:30px;
+  margin-left:160px;
+}
+.personal .name p{
+  font-size:20px;
+  margin-left:160px;
+}
+.contact {
+  float:left;
+  width:60%;
+}
+.contact h2{
+  border-bottom:5px solid #333;
+  width:100%;
+}
+.contact span{
+  font-weight:bold;
+  font-size:16px;
+}
+section{
+  margin-top:20px;
+}
+section:after{
+  content:'';
+  display: block;
+  clear:both;
+}
+section h2{
+	font-size: 18px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+  margin-bottom:10px;
+	width: 40%;
+}
+section h3{
+  font-size:18px;
+  font-weight:normal;
+}
+section h3 span{
+  color:#ccc;
+}
+.experience li,
+.eduction li{
+	padding-left:70px;
+    padding-bottom:15px;
+	border-left: 2px solid #333;
+    position:relative;
+}
+.experience li:before,
+.eduction li:before {
+  content:'';
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  background:#333;
+  position:absolute;
+  left:-6px;
+}
+.box:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+.activity,.skills{
+  float:left;
+  width:50%;
+}
+.activity{
+ padding-right:30px;
+}
+.activity li,
+.skills li{
+  padding-left:70px;
+    padding-bottom:15px;
+  position:relative;
+}
+.activity li:before,
+.skills li:before{
+  content:'';
+  display: inline-block;
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  border:1px solid #333;
+  position:absolute;
+  top:5px;
+  left:-6px;
+}
+.activity li:after,
+.skills li:after{
+  content:'+';
+  position:absolute;
+  top:3px;
+  left:0px;
+}
+.skills li{
+  position:relative;
+  float:left;
+  width:50%;
+  padding-left:50px;
+  margin-bottom:30px;
+}
+
+
+
+
+
+
+
